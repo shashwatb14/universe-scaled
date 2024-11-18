@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    background: black;
+    color: white;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}   
+#progress-container {
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    background-color: #100055;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+#progress-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #2f00ff; 
+}
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #2f00ff;
+    border-radius: 10px;
+}
+#buttons-container {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+}
+.zoom-button {
+    padding: 5px 10px;
+    background-color: #180080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.zoom-button:hover, .active {
+    cursor: pointer;
+    box-shadow: 0 0 10px #2f00ff; 
+    background-color: #2f00ff;
+}
+#heading {
+    text-align: center;
+    text-shadow: white 0 0 10px;
+    padding: 4px;
+}
+#credits {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+a {
+    text-decoration-color: transparent;
+    text-shadow:#00aaff 0 0 10px, 
+                #00aaff 0 0 20px;
+    background: none;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}

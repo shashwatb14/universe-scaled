@@ -1,0 +1,39 @@
+<!--https://medium.com/@cadenmarinozzi/simulating-a-schwarzschild-black-hole-part-1-the-background-and-raytracer-7de436a56b7e
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universe scale chart</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.170.0/examples/jsm/",
+        "vertexShader": "./vertexShader.js",
+        "fragmentShader": "./fragmentShader.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="heading">Universe Scaled</div>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <div id="buttons-container">
+    <button class="zoom-button" id="earth" onclick="zoomTo('earth')">Earth</button>
+    <button class="zoom-button" id="sun" onclick="zoomTo('sun')">Sun</button>
+    <button class="zoom-button" id="stephenson" onclick="zoomTo('stephenson')">Stephenson 2-18</button>
+    <button class="zoom-button" id="phoenix" onclick="zoomTo('phoenix')">Phoenix A*</button>
+    <button class="zoom-button" id="universe" onclick="zoomTo('universe')"> Observable Universe</button>
+  </div>
+  <div id="credits">Copyright &copy; 2024 <a href="https://www.github.com/shashwatb14">Shashwat Bhandari</a></div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
