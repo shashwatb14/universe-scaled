@@ -149,7 +149,7 @@ progressBarContainer.appendChild(progressBar);
 const distanceDisplay = document.createElement('div');
 distanceDisplay.id = 'distance-display';
 distanceDisplay.style.position = 'absolute';
-distanceDisplay.style.top = '32px';
+distanceDisplay.style.top = window.innerWidth <= 768 ? '96px' : '32px'; // Adjust top based on screen width
 distanceDisplay.style.right = '10px';
 distanceDisplay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 distanceDisplay.style.padding = '6px';
